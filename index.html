@@ -50,6 +50,7 @@
             border-radius: 50%;
             width: 100px;
             height: 100px;
+            object-fit: cover;
         }
 
         .member-card h3 {
@@ -65,21 +66,37 @@
             text-decoration: none;
             color: inherit;
         }
+
+        @media (max-width: 600px) {
+            .member-card {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
 
     <header>
+        <!-- Remplace cette image par le logo de ta team -->
         <img src="https://via.placeholder.com/150" alt="Logo de la team">
     </header>
 
     <div class="container">
-        <!-- Membre viernoi86 -->
-        <a href="https://www.roblox.com/fr/users/1472918851/profile" target="_blank">
+        <!-- Carte membre viernoi86 -->
+        <a href="https://www.roblox.com/users/1472918851/profile" target="_blank">
             <div class="member-card">
-                <img src="https://tr.rbxcdn.com/30DAY-Avatar-46630DBAD92B0FF77923418BBC930404-Png/352/352/Avatar/Webp/noFilter" alt="Avatar">
+                <img src="https://tr.rbxcdn.com/30DAY-Avatar-46630DBAD92B0FF77923418BBC930404-Png/352/352/Avatar/Webp/noFilter" alt="Avatar de viernoi86">
                 <h3>viernoi86</h3>
-                <p>Bio du membre : Fan de Roblox et super créateur !</p>
+                <p>Bio : outfit maker !</p>
+            </div>
+        </a>
+
+        <!-- Carte membre ExemplePlayer -->
+        <a href="https://www.roblox.com/fr/users/2208127534/profile" target="_blank">
+            <div class="member-card">
+                <img src="https://tr.rbxcdn.com/30DAY-Avatar-1090CFB0A8F6E9200269947CFF1DF381-Png/352/352/Avatar/Webp/noFilter" alt="Avatar de ExemplePlayer">
+                <h3>ExemplePlayer</h3>
+                <p>Bio : créeteur de la team !</p>
             </div>
         </a>
     </div>
